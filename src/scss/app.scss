@@ -1,26 +1,35 @@
-.wrapper {
-
-  .header {
-
-    padding: 16px 0;
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      &__menu {
+.header__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+        .logo {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          margin-right: 30px;
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-size: 14px;
+          flex-flow: row nowrap;
+        }
 
-            li {
-                padding: 8px;
-            }
-      }
+        .menu {
+          flex-grow: 1;
+        }
 
-    }
+        .menu ul {
+          display: flex;
+          flex-flow: row nowrap;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        .menu li {
+          margin-right: 20px;
+        }
+        .menu li:last-child {
+          margin-right: 0;
+        }
+
+        .button {
+          
+        }
   }
-
-}
-
